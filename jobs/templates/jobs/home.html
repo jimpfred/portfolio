@@ -73,13 +73,13 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        {% for job in jobs.all %}
+        {% for job in jobs %}
         <div class="col">
           <a href="{{ job.URL }}">
           <div class="card shadow-sm">
             <img class="card-img-top" src="{{ job.image.url }}">
             <div class="card-body">
-              <p class="card-text">{{ job.summary }} {{ job.URL }}</p>
+              <p class="card-text">{{ job.summary }} </p>
             </div>
           </div>
           </a> 
